@@ -6,7 +6,7 @@
   </head>
   <body>
     <!-- Меню -->
-    <header>
+    <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -139,6 +139,8 @@
         <button class="button" type="reset">Сбросить</button>
         </form>
 
+        <p class="hotels-found">Найдено гостиниц: 38</p>
+
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -227,9 +229,9 @@
           </li>
         </ul>
 
-        <form class="hotels-page">
-          <label class="hotels-page" for="sorting">Гостиниц на странице</label>
-          <select class="select-control" id="sorting" name="sorting">
+        <form class="pagination-select">
+          <label class="pagination-select" for="sorting">Гостиниц на странице</label>
+          <select class="pagination-select" name="pagination">
             <option value="4">4</option>
             <option value="8">8</option>
             <option value="12">12</option>
@@ -243,17 +245,17 @@
      <section class="mailing-hotels">
       <h2 class="visually-hidden">Подписаться на рассылку</h2>
       <form>
-        <h3>Подпишитесь на рассылку</h3>
-        <p>Только полезная информация и никакого спама,
+        <h3 class="mailing-hotels-title">Подпишитесь на рассылку</h3>
+        <p class="mailing-hotels-p">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
-          <input type="text" name="e-mail" placeholder="Ваш e-mail">
-          <input type="submit" value="подписаться">
+          <input type="text" name="e-mail" placeholder="Ваш e-mail" class="mailing-hotels-mail">
+          <input type="submit" value="подписаться" class="mailing-hotels-submit">
       </form>
     </section>
   </main>
 
     <footer class="page-footer">
-      <section>
+      <section class="socials">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -273,14 +275,14 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="telephone">
        <h3 class="visually-hidden">Телефон</h3>
        <p class="telephone">+7 (812) 812-12-12</p>
      </section>
-     <section>
+     <section  class="academy">
        <h3 class="visually-hidden">Контакты академии</h3>
-       <a href="https://htmlacademy.ru/" class="academy">
-       <img src="" alt="logo-academy">
+       <a href="https://htmlacademy.ru/" class="academy-link">
+       <img class="academy-img" src="" alt="logo-academy">
        </a>
      </section>
     </footer>
