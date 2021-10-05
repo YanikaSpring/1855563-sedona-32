@@ -1,19 +1,154 @@
 @font-face {
-   font-family: "PT Sans"; 
-   font-style: normal;
-   font-weight: 400;
-   src: url("fonts/ptsans-400.woff2") format("woff2");
-   font-display: swap;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "PT Sans"; 
-    font-style: normal;
-    font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
- }
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
 
- body {
-     font-family: "PT Sans";
- }
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+}
+
+li {
+  display: block;
+}
+
+.navigation__link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+.welcome {
+  background-image: url(../images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.welcome__title {
+  background-image: url(../images/divider.svg)
+}
+
+.welcome-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantage-item__title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage-item__number {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage-item__description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantage-item__home {
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item__eat {
+  background-image: url(../images/eat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item__souvenirs {
+  background-image: url(../images/souvenir.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mailing {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  color: #ffff
+}
+
+.advantage-list li:nth-child(1) {
+  color: #ffff
+}
+
+.hotels-heder {
+  background-image: url(../images/catalog-background\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  color: #ffff
+}
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.button__twitter {
+  background-image: url(../images/twitter.svg);
+  background-repeat: no-repeat;
+}
+
+.button__facebook {
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.button__youtube {
+  background-image: url(../images/youtube.svg);
+  background-repeat: no-repeat;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+} */
