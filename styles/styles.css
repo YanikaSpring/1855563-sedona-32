@@ -106,6 +106,14 @@ body {
   color: #FFFFFF;
 }
 
+.advantage__item-number {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
 
 .advantage__item-bridge {
   background-image: url(../images/photo-2.jpg);
@@ -252,6 +260,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .hotels__form-legend {
@@ -342,6 +351,7 @@ body {
     line-height: 26px;
     font-weight: 400;
     text-align: center;
+    color: #333333;
 }
 
 .sorting__type {
@@ -368,6 +378,8 @@ body {
   color: #FFFFFF;
   background-color: #83B3D3;
   text-transform: uppercase;
+  outline: none;
+  border: 0;
 }
 
 .button__apply {
@@ -379,6 +391,7 @@ body {
   background-color: #83B3D3;
   text-transform: uppercase;
   text-align: center;
+  border: 0;
 }
 
 .button__reset {
@@ -388,6 +401,8 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
+  border: 0;
+  background: transparent;
 }
 
 .navigation__button {
@@ -410,6 +425,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #756257;
+  text-decoration: none;
 }
 
 .hotels__card-buttom {
@@ -421,6 +437,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #756257;
+  text-decoration: none;
 }
 
 .hotels__favorite {
@@ -432,6 +449,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #83B3D3;
+  border: 0;
 }
 
 .hotels__favorite-active {
@@ -443,6 +461,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #7DB54F;
+  border: 0;
 }
 
 .pagination__select {
@@ -470,4 +489,23 @@ body {
   background-color: #F2F2F2;
   color: #000000;
   text-decoration: none;
+}
+
+.hotels__rating {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  color: #333333;
+
+}
+
+.hotels__title-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
 }
