@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
     <!-- Меню -->
     <header class="header">
+      <div class="header__container">
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -39,14 +41,14 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
   <!-- первый экран -->
   <main class="main__index">
     <div class="main__container">
       <div class="welcome">
-        <img src="images/welcome.svg" alt="Добро пожаловать в Седону" class="welcome__img" width: 458px; height: 352px;>
+        <img src="images/welcome.svg" alt="Добро пожаловать в Седону" class="welcome__img">
       </div>
-      <div class="welcome__vector"></div>
         <h1 class="welcome__title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h1>
         <p class="welcome__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
@@ -66,25 +68,31 @@
             <div class="advantage__img-city"></div>
             </div>
 
-              <ul class="extra__list">
-                <div class="extra__container">
+            <ul class="extra__list">
                 <li class="extra__item">
-                  <img src="images/house.svg" class="extra__home" alt="Жильё">
+                  <div class="extra__home-container">
+                    <div class="extra__home-img"></div>
                   <h4 class="extra__item-home">Жильё</h4>
                   <p class="extra__item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+                </div>
                 </li>
                 <li class="extra__item">
-                  <img src="images/eat.svg" class="extra__home" alt="Еда">
+                  <div class="extra__eat-container">
+                  <div class="extra__eat-img"></div>
                   <h4 class="extra__item-eat">Еда</h4>
                   <p class="extra__item-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                </div>
                 </li>
                 <li class="extra__item">
-                  <img src="images/souvenir.svg" class="extra__home" alt="Сувениры">
+                  <div class="extra__souvenirs-container">
+                  <div class="extra__souvenirs-img"></div>
                   <h4 class="extra__item-souvenirs">Сувениры</h4>
                   <p class="extra__item-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+                </div>
                 </li>
-              </div>
+
               </ul>
+
           </li>
 
           <li class="advantage-list">
@@ -98,23 +106,29 @@
           </div>
           </li>
 
-          <div class="advantage__list-rest">
+
           <li class="advantage__item">
+            <div class="advantage__lions">
             <h3 class="advantage__item-title">Небольшая площадь</h3>
               <p class="advantage__item-number">— №3 —</p>
               <p class="advantage__item-description">Все достопримечательности<br> находятся очень близко</p>
+            </div>
           </li>
           <li class="advantage__item">
+            <div class="advantage__road">
             <h3 class="advantage__item-title">Красивая дорога</h3>
               <p class="advantage__item-number">— №4 —</p>
               <p class="advantage__item-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+            </div>
           </li>
           <li class="advantage__item">
+            <div class="advantage__tourists">
             <h3 class="advantage__item-title">Мало туристов</h3>
               <p class="advantage__item-number">— №5 —</p>
               <p class="advantage__item-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+            </div>
           </li>
-        </div>
+
         </ol>
       </section>
       <!-- Поиск гостинницы -->
