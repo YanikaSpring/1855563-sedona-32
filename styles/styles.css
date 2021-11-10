@@ -70,10 +70,6 @@ body {
   display: flex;
   margin: 0;
   padding: 19px 0 0 10px;
-
-
-
-
 }
 
 .logo, .logo__sedona {
@@ -91,7 +87,6 @@ body {
   color: black;
   margin: 0;
   padding: 20px;
-
 }
 
 .navigation__link {
@@ -141,14 +136,12 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   padding: 0;
-
 }
 
 .main__hotels {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-
 }
 
 /* первый экран */
@@ -553,8 +546,6 @@ body {
   margin: 0;
 }
 
-
-
 .academy {
   margin-left: auto;
   margin-right: 72px;
@@ -581,7 +572,6 @@ body {
   padding: 0;
 }
 
-
 /* страница гостиницы */
 
 .hotels__background {
@@ -590,7 +580,9 @@ body {
   max-width: 1200px;
   height: 408px;
   margin-top: -9px;
-  padding: 30px 72px 83px 71px;
+  padding: 0px 72px 0px 71px;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .hotels__header {
@@ -648,7 +640,6 @@ body {
   margin-right: 20px;
 }
 
-
 .breadcrumbs {
   list-style-type: none;
   display: flex;
@@ -667,7 +658,6 @@ body {
   color: #FFFFFF;
   width: 150px;
   margin-left: 71px;
-
 }
 
 .hotels__form-infrastructure{
@@ -699,7 +689,6 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   width: 150px;
-
 }
 
 .hotels__housing-list {
@@ -713,7 +702,6 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   width: 150px;
-
 }
 
 .buttons__sorting {
@@ -721,32 +709,36 @@ body {
   display: flex;
   width: 160px;
   margin-left: auto;
+  margin-top: 0;
   justify-content: space-between;
+
 }
 
-.button__tile-link {
-  padding: 10px;
+.button__sorting {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons__sorting-item {
   width: 48px;
   height: 48px;
+  border: 2px solid #E6E6E6;
+  margin: 0 8px 0 0;
+  border-radius: 4px;
+  margin: 0;
+  display: flex;
 
 }
 
-.button__slide-link {
-  padding: 10px;
-  width: 48px;
-  height: 48px;
+.buttons__sorting-item:last-child {
+  border: 2px solid #000000;
 }
 
-.button__list-link {
-  padding: 10px;
-  width: 48px;
-  height: 48px;
+.buttons__sorting-link {
+  padding: 5px 15px 20px 15px;
 }
 
-.hotels__list {
-  list-style-type: none;
 
-}
 
 .hotels__infrastructure-item {
   font-family: "PT Sans", sans-serif;
@@ -762,25 +754,28 @@ body {
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-right: 192px;
+  margin: 0 192px 0 0;
   padding: 0;
-
 }
 
 .hotels__list {
   display: grid;
   grid-template-rows: 123px 123px 123px 123px;
-  row-gap: 52px;
-  margin: 0 0 30px 0;
+  row-gap: 58px;
   padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
 
+.hotels__card-img {
+  margin: 0;
 }
 
 .hotels__card {
   display: grid;
-  grid-template-rows: 31px auto 37px;
-  grid-template-columns: 180px 46px 151px 8px 160px 361px 160px;
-
+  grid-template-rows: 31px 55px 37px;
+  grid-template-columns: 180px 36px 151px 8px 160px 361px 160px;
+  margin: 0;
 }
 
 .hotels__card .hotels__card-link {
@@ -791,7 +786,6 @@ body {
 .hotels__card .hotels__title-link {
   grid-column: 3 / 6;
   grid-row: 1 / 2;
-
 }
 
 .hotels__card-title {
@@ -858,14 +852,43 @@ body {
 }
 
 .sorting__type {
+  position: relative;
+  margin: 0;
+}
+
+.sorting__type::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/link-sorting.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  right: 21px;
+  top: 25px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
+
+}
+
+.select__control {
+  padding: 12px 20px 12px 19px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
   color: #333333;
   width: 287px;
-  margin-top: 44px;
+  margin: 0;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
 }
+
+
 
 .mailing__input {
   font-family: "PT Sans", sans-serif;
@@ -1019,6 +1042,8 @@ body {
 .hotels__search {
   display: flex;
   flex-direction: row;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .hotels__form {
@@ -1039,7 +1064,7 @@ body {
 .hotels__catalog {
   display: flex;
   width: 1056px;
-  margin: 0 auto;
+  margin: 0px 72px 31px 72px;
   flex-direction: column;
 }
 
@@ -1106,8 +1131,10 @@ body {
   display: flex;
   flex-direction: row;
   width: 1057px;
-  margin: 0 auto;
+  margin: 45px 72px 42px 71px;
   padding: 0;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 
