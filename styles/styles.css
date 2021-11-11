@@ -522,8 +522,8 @@ body {
 }
 
 .social__list {
-  width: 110px;
-  margin: 0 0 0 70px;
+  width: 120px;
+  margin: 0 0 0 60px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -764,7 +764,7 @@ body {
   row-gap: 58px;
   padding: 0;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 31px 0;
 }
 
 .hotels__card-img {
@@ -776,7 +776,19 @@ body {
   grid-template-rows: 31px 55px 37px;
   grid-template-columns: 180px 36px 151px 8px 160px 361px 160px;
   margin: 0;
+  position: relative;
+
 }
+
+.hotels__card::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #E5E5E5;
+  width: 1056px;
+  top: -28px;
+}
+
+
 
 .hotels__card .hotels__card-link {
   grid-column: 1 / -1;
@@ -830,8 +842,27 @@ body {
   text-transform: uppercase;
   grid-row: 3 / 4;
   grid-column: 7 / 8;
+
 }
 
+.stars {
+  grid-row: 1 / 2;
+  grid-column: 7 / 8;
+  justify-self: center;
+  align-self: center;
+}
+
+/* .hotels__card-link::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/stars-4.svg);
+  background-repeat: no-repeat;
+  top: 9px;
+  right: 35px;
+  width: 91px;
+  height: 17px;
+
+} */
 
 
 .mailing__description-hotels {
@@ -841,7 +872,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #333333;
-  margin: 0 0 26px 0;
+  margin: 0 0 46px 0;
   padding: 0;
 
 }
@@ -918,7 +949,12 @@ body {
   border: 0;
   border-radius: 0px 10px 10px 0px;
   margin: 0;
+  padding: 15px 30px 15px 40px;
 
+}
+
+.button__social {
+  margin-right: 0px;
 }
 
 .button__apply {
@@ -1037,6 +1073,7 @@ body {
   color: #000000;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  position: relative;
 }
 
 .hotels__search {
@@ -1066,6 +1103,7 @@ body {
   width: 1056px;
   margin: 0px 72px 31px 72px;
   flex-direction: column;
+  position: relative;
 }
 
 /* кнопка "Загрузить еще" на странице выбора гостиниц */
@@ -1083,6 +1121,7 @@ body {
   margin-top: 31px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 18px;
   height: 55px;
   border-radius: 4px;
 }
@@ -1108,7 +1147,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 15px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   }
 
@@ -1184,6 +1223,50 @@ body {
 
 .pagination__form {
   margin-left: auto;
+  position: relative;
+
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
+}
+
+.pagination__select {
+  padding: 13px 10px 12px 17px;
+  width: 160px;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+
+}
+
+.pagination__form::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/link-sorting.svg);
+  background-repeat: no-repeat;
+  top: 21px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+}
+
+.pagination__select-title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin: 0px 45px 0 0;
+  padding: 5px 0 0 0;
 }
 
 /* скрытые надписи и кнопки */
