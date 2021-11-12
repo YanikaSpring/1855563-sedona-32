@@ -40,16 +40,16 @@ body {
 }
 
 /* header */
-/* меню-навигация */
 .page-header {
   margin: 0;
   padding: 0;
 }
 
+/* меню-навигация */
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px 0 71px;
+  padding: 0 72px 0 60px;
   /* outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px; */
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .logo, .logo__sedona {
-  margin: 0;
+  margin: 0 23px 0 0;
   padding: 0;
 }
 
@@ -85,11 +85,11 @@ body {
   text-decoration: none;
   position: relative;
   color: black;
-  margin-right: 20px;
-  padding: 20px;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; 
-  
+  margin-right: 13px;
+  padding: 6px 20px 6px 20px;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
+
 }
 
 .navigation__link {
@@ -99,61 +99,14 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: black;
-  margin: 0;
-  padding: 10px 33px 10px 0;
+  margin: 0 8px 0 0;
+  padding: 6px 12px 6px 12px;
   position: relative;
 }
 
-.navigation__link:hover {
-  color: #756257;
-}
+.navigation__link-user:last-child {
+  margin-right: 5px ;
 
-.navigation__link:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.navigation__link-user:hover .navigation__icon {
-  fill: #756257;
-}
-
-.navigation__link-user:focus   {
-  fill: #756257;
-  box-shadow: inset 0 0 0 3px #83B3D3;
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.navigation__link-button:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
-  outline: none;
-  box-sizing: border-box;
-  border-radius: 10px;
-}
-
-.navigation__link-active::before {
-  position: absolute;
-  right: 20px;
-  top: 55px;
-  left: 0px;
-  height: 2px;
-  width: 70px;
-  background-color: #756257;
-  content: "";
-}
-
-.navigation__link-hotels::before {
-  position: absolute;
-  right: 20px;
-  top: 55px;
-  left: 0px;
-  height: 2px;
-  width: 93px;
-  background-color: #756257;
-  content: "";
 }
 
 .navigation__link-button {
@@ -166,24 +119,105 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #756257;
-  margin: 0;
+  margin: 0 0 0 10px;
   width: 160px;
   height: 37px;
-  padding: 9px 35px 10px 35px;
+  padding: 9px 35px 9px 37px;
   border-radius: 4px;
 }
 
 .navigation__icon {
   position: absolute;
-  top: 25px;
-  right: 10px;
+  top: 10px;
+  right: 15px;
+  fill: #000000;
 }
 
-.navigation__icon-heart {
+.navigation__icon-hert {
   position: absolute;
-  top: 15px;
+  top: 0px;
   right: 5px;
+  fill: #000000;
 }
+
+/* состояния ссылок навигации */
+.navigation__link:hover {
+  color: #756257;
+}
+
+.navigation__link:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #756257;
+}
+
+.navigation__link:active {
+  color: #756257;
+}
+
+.navigation__link-user:hover .navigation__icon {
+  fill: #756257;
+}
+
+.navigation__link-user:hover .navigation__icon-heart {
+  fill: #756257;
+}
+
+
+.navigation__link-user:focus   {
+  fill: #756257;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+/* коричневые кнопки */
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #615048;
+  color: #756257;
+}
+
+.navigation__link-active::before {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  height: 2px;
+  width: 70px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation__link-hotels::before {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  left: 10px;
+  height: 2px;
+  width: 93px;
+  background-color: #756257;
+  content: "";
+}
+
+
+
+
 
 /* main */
 .main__container {
@@ -402,7 +436,7 @@ body {
 .extra__item-eat::before {
   content: "";
   position: absolute;
-  top: -89px;
+  top: -90px;
   left: 98px;
   width: 75px;
   height: 72px;
@@ -433,8 +467,8 @@ body {
 .extra__item-home::before {
   content: "";
   position: absolute;
-  top: -89px;
-  left: 100px;
+  top: -93px;
+  left: 98px;
   width: 75px;
   height: 72px;
   margin-left: -9px;
@@ -467,7 +501,7 @@ body {
 .extra__item-souvenirs::before {
   content: "";
   position: absolute;
-  top: -89px;
+  top: -99px;
   left: 100px;
   width: 64px;
   height: 76px;
@@ -539,7 +573,7 @@ body {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 0px;
   padding: 0;
 }
@@ -552,7 +586,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;
-  margin: 0px 0 35px 0;
+  margin: 94px 0 25px 0;
   padding: 0;
 }
 
@@ -563,7 +597,7 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
-  margin: 0 0 26px 0;
+  margin: 0 0 48px 0;
   padding: 0;
 }
 
@@ -627,6 +661,38 @@ body {
   padding: 0;
 }
 
+.telephone:hover {
+  color: #756257;
+}
+
+.telephone:focus {
+  color: #756257;
+  border: 3px solid #83B3D3;
+}
+
+.telephone:active {
+  color: rgba(117, 98, 87, 1);
+}
+
+.academy__link:hover .academy__icon {
+  fill: rgba(117, 98, 87, 1);
+}
+
+.academy__link:focus .academy__icon {
+  fill: rgba(117, 98, 87, 1);
+  border: 3px solid #83B3D3;
+}
+
+.academy__link:active .academy__icon {
+  fill: rgba(117, 98, 87, 1);
+}
+
+.academy__icon {
+  fill: black;
+}
+
+
+
 /* страница гостиницы */
 
 .hotels__background {
@@ -641,9 +707,9 @@ body {
 }
 
 .hotels__header {
-  margin: 0;
-  padding: 0;
-  
+  margin: 0 0 50px 0;
+  padding: 33px 0 0 0;
+
 
 }
 
@@ -654,16 +720,14 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   margin: 0;
-  padding: 35px 0 0 0;
-  /* outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; */
+  padding: 0;
+
 }
 
 .breadcrumbs__item {
   padding: 0;
   margin: 0;
-  /* outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; */
+
 }
 
 .breadcrumbs__link {
@@ -700,7 +764,7 @@ body {
   display: flex;
   align-self: flex-start;
   flex-wrap: wrap;
-  margin: 0;
+  margin: -10px 0;
   padding: 0;
   position: relative;
 }
@@ -770,28 +834,35 @@ body {
 }
 
 .button__sorting {
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
-.buttons__sorting-item {
-  width: 48px;
-  height: 48px;
-  border: 2px solid #E6E6E6;
-  margin: 0 8px 0 0;
-  border-radius: 4px;
-  margin: 0;
-  display: flex;
 
+
+.buttons__sorting-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
 
-.buttons__sorting-item:last-child {
+.button__active {
   border: 2px solid #000000;
 }
 
-.buttons__sorting-link {
-  padding: 5px 15px 20px 15px;
+.buttons__sorting-link:hover {
+  border: 2px solid #83B3D3;
 }
+
+.buttons__sorting-link:focus {
+  border: 2px solid #83B3D3;
+}
+
+
+
+
 
 
 
@@ -924,6 +995,8 @@ body {
 .mailing__form {
   margin: 0;
   padding: 0;
+  /* outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px; */
 }
 
 .sorting__type {
@@ -960,10 +1033,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
 }
-
-
 
 .mailing__input {
   font-family: "PT Sans", sans-serif;
@@ -971,15 +1041,53 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  width: 600px;
+  width: 580px;
   height: 60px;
   padding-left: 22px;
   border-radius: 10px 0px 0px 10px;
   border: 0;
   margin: 0;
   background-color: #F2F2F2;
-
 }
+
+.mailing__input:hover {
+  background-color: #E5E5E5;
+}
+
+.mailing__input:focus {
+  background-color: #E5E5E5;
+  border: 3px solid #83B3D3;
+}
+
+.mailing__input:active {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+}
+
+.mailing__input:invalid {
+  background-color: #FFFFFF;
+  border: 2px solid #FF5757;
+}
+
+.social__icon {
+  fill: #83B3D3;
+}
+
+.social__icon:hover {
+  fill: #68A2CA;
+}
+
+.social__icon:focus {
+  fill: #68A2CA;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+
+
+
 
 .mailing__button {
   font-family: "PT Sans", sans-serif;
@@ -993,9 +1101,24 @@ body {
   border: 0;
   border-radius: 0px 10px 10px 0px;
   margin: 0;
-  padding: 15px 30px 15px 40px;
-
+  padding: 15px 34px 14px 34px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
+
+.button__blue:hover {
+  background-color: #68A2CA;
+}
+
+.button__blue:focus {
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.button-blue:active {
+  color: #83B3D333;
+}
+
 
 .button__social {
   margin-right: 0px;
@@ -1011,8 +1134,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: 0;
-  padding: 10px 15px;
+  padding: 16px 34px 17px 33px;
   border-radius: 4px;
+
 }
 
 .button__reset {
