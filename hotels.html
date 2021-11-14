@@ -75,6 +75,7 @@
       <section class="hotels__search">
         <h2 class="visually-hidden" hidden>Фильтры для поиска гостиницы</h2>
         <form class="hotels__form" action="https://echo.htmlacademy.ru/" method="get">
+
           <fieldset class="hotels__form-fieldset">
             <legend class="hotels__form-infrastructure">Инфраструктура:</legend>
             <ul class="hotels__infrastructure-list">
@@ -128,21 +129,36 @@
             </ul>
           </fieldset>
 
+
           <fieldset class="hotels__filter-price">
             <legend class="hotels__form-price">Стоимость, ₽:</legend>
-            <button class="range__toggle toggle__min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену</span>
-            </button>
-            <button class="range__toggle toggle__max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену</span>
-            </button>
-            <label class="hotels__price-input">
-             от<input class="hotels__filter-input" type="number" name="min-price" value="0">
-          </label>
-          <label class="hotels__price-input">
-            до<input class="hotels__filter-input" type="number" name="max-price" value="9000">
-         </label>
+
+            <div class="range">
+
+              <div class="range__wrapper-inputs">
+                <label class="hotels__price-input">
+                  <input class="hotels__filter-input input__before" type="number" name="min-price" value="0"> <span class="before">от</span>
+               </label>
+               <label class="hotels__price-input">
+                <input class="hotels__filter-input input__after" type="number" name="max-price" value="9000"> <span class="after">до</span>
+             </label>
+             </div>
+
+
+             <div class="range__scale">
+              <div class="range__bar" style="width: 227px">
+                <button class="range__toggle toggle__min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button class="range__toggle toggle__max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+
+            </div>
+              </div>
+            </div>
           </fieldset>
+
           <div class="hotels__buttoms">
         <button class="button__apply" type="submit">Применить</button>
         <button class="button__reset" type="reset">Сбросить</button>
