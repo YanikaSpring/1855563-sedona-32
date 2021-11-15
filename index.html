@@ -53,30 +53,32 @@
                 <h2 class="popover__title visually-hidden">Избранное</h2>
                 <ul class="popover__favorite-list">
                   <li class="popover__favorite-item">
-                    <!-- <a class="popover__favorite-link" href="#"> -->
-                    <img class="popover__favorite-img" src="images/content/hotel-2-small.jpg" alt="">
-                    <p class="popover__favorite-title">Desert Quail Inn</p>
-                    <p class="popover__favorite-decription">Мотель</p>
+                    <a class="popover__favorite-link">
+                      <img class="popover__favorite-img" src="images/content/hotel-2-small.jpg" alt="">
+                      <p class="popover__favorite-title">Desert Quail Inn</p>
+                      <p class="popover__favorite-decription">Мотель</p>
+                    </a>
                     <svg class="icon__del" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
                       <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z"/>
                       <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.70001C6.8001 5.40001 6.5001 5.10001 6.2001 5.10001C5.9001 5.10001 5.6001 5.40001 5.6001 5.70001V11.4C5.7001 11.7 5.9001 12 6.2001 12Z"/>
                       <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.70001C10.3001 5.40001 10.0001 5.10001 9.7001 5.10001C9.4001 5.10001 9.1001 5.50001 9.1001 5.70001V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
                       </svg>
-                    <!-- </a> -->
+
                   </li>
                   <li class="popover__favorite-item">
-                    <!-- <a class="popover__favorite-link" href="#"> -->
+                    <a class="popover__favorite-link">
                     <img class="popover__favorite-img" src="images/content/hotel-3-small.jpg" alt="">
                     <p class="popover__favorite-title">Villas at Poco Diablo</p>
                     <p class="popover__favorite-decription">Апартаменты</p>
+                    </a>
+
                     <svg class="icon__del" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
                       <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z"/>
                       <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.70001C6.8001 5.40001 6.5001 5.10001 6.2001 5.10001C5.9001 5.10001 5.6001 5.40001 5.6001 5.70001V11.4C5.7001 11.7 5.9001 12 6.2001 12Z"/>
                       <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.70001C10.3001 5.40001 10.0001 5.10001 9.7001 5.10001C9.4001 5.10001 9.1001 5.50001 9.1001 5.70001V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"/>
                       </svg>
-                    <!-- </a> -->
                   </li>
                 </ul>
                 <a class="popover__favorite-button" href="#">все избранные</a>
@@ -258,25 +260,28 @@
         <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
         <form class="modal__search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="date" class="modal__search-arrival">Дата заезда:</label>
-          <input type="date" name="date-arrival" class="modal__date-arrival">
+          <input type="text" name="date-arrival" class="modal__date-arrival" placeholder="27 апреля 2020">
           <p class="modal__description-error">Мы не можем отправить вас в прошлое.</p>
           <label for="date" class="modal__search-departure">Дата выезда:</label>
-          <input type="date" name="date-departure" class="modal__date-departure">
+          <input type="text" name="date-departure" class="modal__date-departure" placeholder="1 сентября 2021">
           <p class="modal__description">На эти даты есть свободные номера. Пока есть.</p>
-          <div class="modal__search-adults">
             <span class="adults">Взрослые:</span>
-            <div class="adults__container">
-              <button class="aduls__minus">-</button>
+            <div class="modal__search-adults">
+              <button class="modal__button-minus"></button>
               <span class="adults__number">2</span>
-              <button class="aduls__plus">+</button>
+              <button class="modal__button-plus"></button>
+            </div>
+          <span class="child">Дети:</span>
+          <div class="child__description-info">
+            <button class="button__child-info">i</button>
+            <div class="child__description-conteiner">
+              <p class="child__description">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети <br>до 6 лет размещаются<br> бесплатно.</p>
             </div>
           </div>
-          <span class="child">Дети:</span>
-          <button class="child__info"></button>
           <div class="modal__search-child">
-            <button class="child__minus">-</button>
+            <button class="modal__button-minus"></button>
             <span class="child__number">1</span>
-            <button class="child__plus">+</button>
+            <button class="modal__button-plus"></button>
           </div>
           <input type="submit" value="Найти" class="modal__button">
         </form>
