@@ -133,7 +133,7 @@
                   <span class="control__mark"></span>
                   <span class="control__label">Гостинница</span>
                   </label>
-                </li>  
+                </li>
                 <li class="hotels__housing-item">
                   <label class="control">
                     <input class="visually-hidden control__input" type="radio" name="type-hotels" value="motel">
@@ -179,8 +179,9 @@
             <button class="button__reset" type="reset">Сбросить</button>
           </div>
         </form>
+      </section>
         </div>
-     </section>
+
       <div class="hotels__found-container">
        <p class="hotels__found">Найдено гостиниц: 38</p>
         <form class="sorting__type">
@@ -323,7 +324,6 @@
           </select>
 
         </form>
-      </section>
     </div>
      <!-- Рассылка -->
      <section class="mailing__hotels">
@@ -410,11 +410,11 @@
     <section class="modal__content">
       <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
       <form class="modal__search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="date" class="modal__search-arrival">Дата заезда:</label>
-        <input type="text" name="date-arrival" class="modal__date-arrival" placeholder="27 апреля 2020">
-        <p class="modal__description-error">Мы не можем отправить вас в прошлое.</p>
-        <label for="date" class="modal__search-departure">Дата выезда:</label>
-        <input type="text" name="date-departure" class="modal__date-departure" placeholder="1 сентября 2021">
+        <label for="date-arrival"  class="modal__search-arrival">Дата заезда:</label>
+            <input type="text" id="date-arrival" name="date-arrival" class="modal__date-arrival" placeholder="27 апреля 2020">
+            <p class="modal__description-error">Мы не можем отправить вас в прошлое.</p>
+            <label for="date-departure"  class="modal__search-departure">Дата выезда:</label>
+            <input type="text" id="date-departure" name="date-departure" class="modal__date-departure" placeholder="1 сентября 2021">
         <p class="modal__description">На эти даты есть свободные номера. Пока есть.</p>
           <span class="adults">Взрослые:</span>
           <div class="modal__search-adults">

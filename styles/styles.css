@@ -31,8 +31,6 @@ body {
   margin: 0;
   background-color: #F2F2F2;
   padding: 0;
-  
-
 }
 
 .page__container {
@@ -46,7 +44,6 @@ body {
 .page-header {
   margin: 0;
   padding: 0;
-  
 }
 
 /* меню-навигация */
@@ -724,7 +721,7 @@ body {
   padding: 10px;
   border: 3px solid #FFFFFF;
   border-radius: 10px;
-  overflow: none;
+  outline: none;
 }
 
 /* страница гостиницы */
@@ -1826,7 +1823,6 @@ body {
 }
 
 .input__after {
-  padding-left: -19px;
   position: relative;
 }
 
@@ -1979,7 +1975,7 @@ body {
   opacity: 1;
   border: 3px solid #83B3D3;
   border-radius: 10px;
-} 
+}
 
 .button__del:hover {
   opacity: 0.1;
