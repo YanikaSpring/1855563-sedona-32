@@ -29,20 +29,24 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
   padding: 0;
+  
+
 }
 
 .page__container {
   background-color: #FFFFFF;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 20px -12px #000000;
 }
 
 /* header */
 .page-header {
   margin: 0;
   padding: 0;
+  
 }
 
 /* меню-навигация */
@@ -198,7 +202,7 @@ body {
 
 .button:active {
   background-color: #615048;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation__link-active::before {
@@ -693,6 +697,7 @@ body {
 
 .telephone:active {
   color: #756257;
+  opacity: 0.3;
 }
 
 .academy__link:hover .academy__icon {
@@ -773,7 +778,7 @@ body {
 }
 
 .breadcrumbs__link:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -799,7 +804,7 @@ body {
 }
 
 .breadcrumbs__link-home:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1147,17 +1152,17 @@ body {
 
 .mailing__input:focus {
   background-color: #E5E5E5;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .mailing__input:active {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .mailing__input:invalid {
   background-color: #FFFFFF;
-  border: 2px solid #FF5757;
+  outline: 2px solid #FF5757;
 }
 
 .mailing__button {
@@ -1188,12 +1193,11 @@ body {
 
 .button__blue:active {
   background-color: #68A2CA;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .mailing__button:active {
-  color: #68A2CA;
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button__apply {
@@ -1357,7 +1361,7 @@ body {
 }
 
 .hotels__favorite-active:active {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.3);
   background-color: rgba(108, 158, 66, 1);
 }
 
@@ -1657,16 +1661,16 @@ body {
   border-radius: 4px;
 }
 
-.control:hover .control__mark {
+.control__mark:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control__mark {
+.control__mark:focus {
   background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
-.control:active .control__mark {
+.control__mark:active {
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1790,10 +1794,10 @@ body {
   font-weight: 400;
   text-align: start;
   color: #FFFFFF;
-  width: 140px;
+  width: 110px;
   height: 48px;
-  padding-left: 5px;
-  margin: 0;
+  padding-left: 10px;
+  margin-right: 17px;
   outline: none;
 }
 
@@ -1879,6 +1883,11 @@ body {
   left: 188px;
 }
 
+/* отобразить поповер */
+.navigation__item-user:hover .popover {
+  display: block;
+}
+
 .popover-content {
   height: 100%;
 }
@@ -1923,7 +1932,7 @@ body {
 
 .popover__favorite-title {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   text-align: start;
@@ -1935,37 +1944,45 @@ body {
 
 .popover__favorite-decription {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
   font-weight: 400;
   text-align: start;
   color: #000000;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  margin-top: 8px ;
+  margin-left: -1px;
 }
 
-.icon__del {
-  fill: #000000;
-  opacity: 0.2;
+.button__del {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
   position: absolute;
-  top: 30px;
-  right: 24px;
+  top: 25px;
+  right: 17px;
+  background-image: url(../images/del.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  border: 0;
   cursor: pointer;
-  padding: 10px;
-  border: 3px solid #FFFFFf;
-  border-radius: 10px;
 }
 
-.icon__del:hover {
-  fill: #000000;
+.button__del:hover {
   opacity: 1;
 }
 
-.icon__del:focus {
+.button__del:focus {
   fill: #000000;
   opacity: 1;
   border: 3px solid #83B3D3;
   border-radius: 10px;
+} 
+
+.button__del:hover {
+  opacity: 0.1;
 }
 
 .popover__favorite-button {
