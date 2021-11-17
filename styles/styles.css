@@ -1232,7 +1232,6 @@ body {
   border: 3px solid #68A2CA;
 }
 
-
 .button__reset {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1259,7 +1258,6 @@ body {
 .button__reset:active {
   opacity: 0.3;
 }
-
 
 .search-hotels__link {
   font-family: "PT Sans", sans-serif;
@@ -2195,17 +2193,31 @@ body {
   outline: none;
   grid-column: 3 / -1;
   grid-row: 1 / 2;
+  position: relative;
 }
 
-.modal__search-arrival::after{
-  content: "";
+.button__date-arrival {
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 180px;
+ right: 88px;
+ background-image: url(../images/date.svg);
+ background-repeat: no-repeat;
+ border: 0;
+ cursor: pointer;
+}
+
+.button__date-departure {
+  width: 20px;
+  height: 20px;
   position: absolute;
+  top: 270px;
+  right: 88px;
   background-image: url(../images/date.svg);
   background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-  top: 12px;
-  right: -450px;
+  border: 0;
+  cursor: pointer;
 }
 
 .modal__date-arrival:hover {
@@ -2259,6 +2271,7 @@ body {
   outline: none;
   grid-column: 3 / -1;
   grid-row: 3 / 4;
+  position: relative;
 }
 
 .modal__date-departure:hover {
@@ -2279,7 +2292,6 @@ body {
 }
 
 .modal__search-adults {
-  /* width: 135px; */
   height: 50px;
   background: #F2F2F2;
   border-radius: 4px;
@@ -2421,8 +2433,3 @@ body {
   line-height: 20px;
   color: #FFFFFF;
 }
-
-/* для обозначения границ
-outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; */
-
