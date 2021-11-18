@@ -57,8 +57,8 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   display: flex;
-  margin: 0;
-  padding: 19px 0 0 0;
+  margin: 19px 0 0 0;
+  padding: 0;
 }
 
 .navigation-user {
@@ -96,7 +96,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: black;
-  margin: 0 8px 0 0;
+  margin: 0 9px 0 0;
   padding: 6px 12px 6px 12px;
   position: relative;
 }
@@ -112,8 +112,8 @@ body {
   text-decoration: none;
   background-color: #756257;
   margin: 0;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
+  min-height: 37px;
   padding: 9px 35px 9px 37px;
   border-radius: 4px;
 }
@@ -815,7 +815,7 @@ body {
   display: flex;
   align-self: flex-start;
   flex-wrap: wrap;
-  margin: -10px 0 40px 0;
+  margin: -10px 0 40px 2px;
   padding: 0;
   position: relative;
 }
@@ -826,8 +826,8 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
-  width: 150px;
-  margin: 0 0 30px 0;
+  min-width: 150px;
+  margin: 0 0 31px -2px;
 }
 
 .hotels__infrastructure-list {
@@ -857,13 +857,13 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
-  width: 150px;
-  margin: 0 0 30px 0;
+  min-width: 150px;
+  margin: 0 -5px 31px 0;
 }
 
 .hotels__housing-list {
   list-style-type: none;
-  margin: 0;
+  margin: 1px 0 0 2px;
   padding: 0;
 }
 
@@ -873,7 +873,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #FFFFFF;
-  width: 150px;
+  min-width: 150px;
 }
 
 .buttons__sorting {
@@ -929,7 +929,7 @@ body {
 }
 
 .hotels__form-price {
-  margin: 0 0 34px 0;
+  margin: 0 0 34px -2px;
 }
 
 .hotels__infrastructure-item {
@@ -1004,7 +1004,7 @@ body {
   grid-row: 1 / 2;
   margin-top: -7px;
   padding-left: 5px;
-  width: 239px;
+  min-width: 239px;
   outline: none;
   border: 3px solid #FFFFFF;
 }
@@ -1108,11 +1108,11 @@ body {
   width: 12px;
   height: 7px;
   right: 21px;
-  top: 25px;
+  top: 22px;
 }
 
 .select__control {
-  padding: 13px 20px 9px 19px;
+  padding: 7px 20px 9px 17px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
@@ -1120,12 +1120,14 @@ body {
   color: #333333;
   width: 287px;
   margin: 0;
+  min-height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  background-color: #FFFFFF;
 }
 
 .mailing__input {
@@ -1207,12 +1209,14 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: 0;
-  padding: 16px 35px 12px 33px;
+  /* padding: 16px 35px 12px 33px; */
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   outline: none;
   border: 3px solid #83B3D3;
+  min-width: 160px;
+  min-height: 48px;
 }
 
 .button__apply:hover {
@@ -1417,7 +1421,7 @@ body {
 .hotels__buttoms {
   display: flex;
   flex-direction: column;
-  margin-left: 81px;
+  margin-left: 78px;
   justify-content: center;
   padding-top: 45px;
 }
@@ -1442,10 +1446,10 @@ body {
   border: 0;
   text-transform: uppercase;
   width: 625px;
-  margin-top: 31px;
+  margin-top: 27px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   height: 55px;
   border-radius: 4px;
   cursor: pointer;
@@ -1477,7 +1481,7 @@ body {
   justify-content: center;
   width: 800px;
   margin: 0;
-  padding: 89px 200px 137px 200px;
+  padding: 86px 200px 137px 201px;
 }
 
 .mailing__title-hotels {
@@ -1488,7 +1492,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 26px 0;
+  margin: 0 0 29px 0;
   padding: 0;
  }
 
@@ -1635,7 +1639,7 @@ body {
 }
 
 .hotels__form-fieldset {
-  margin: 0 60px 0 0;
+  margin: 0 63px 0 0;
   padding: 0;
   border: 0;
 }
@@ -1758,12 +1762,13 @@ body {
 .range__wrapper-inputs {
   display: flex;
   justify-content: flex-start;
-  width: 287px;
+  min-width: 285px;
   height: 48px;
   position: relative;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
+  margin: 0 0 0 -2px;
 }
 
 .range__wrapper-inputs::before{
