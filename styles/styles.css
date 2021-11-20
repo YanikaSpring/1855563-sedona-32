@@ -51,6 +51,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 72px 0 60px;
+  position: relative;
+  min-height: 73px;
 }
 
 .navigation__list {
@@ -71,9 +73,10 @@ body {
 }
 
 .logo, .logo__sedona {
-  margin: 0 23px 0 10px;
-  padding: 0;
+  position: absolute;
   outline: none;
+  left: 265px;
+
 }
 
 .navigation__link-user {
@@ -243,6 +246,7 @@ body {
   height: 485px;
   margin-top: -9px;
   padding: 0px;
+  background-color: #1d343c;
 }
 
 .welcome__img {
@@ -306,7 +310,8 @@ body {
   color: #333333;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  max-width: 230px;
 }
 
 .advantage__description {
@@ -317,6 +322,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
+  max-width: 220px;
 }
 
 .advantage__item-number {
@@ -353,6 +359,7 @@ body {
   background-repeat: no-repeat;
   width: 800px;
   height: 384px;
+  background-color: #405615;
 }
 
 .advantage__container-city {
@@ -401,6 +408,7 @@ body {
   background-repeat: no-repeat;
   width: 800px;
   height: 384px;
+  background-color: #5a382f;
 }
 
 .advantage__item-bridge {
@@ -528,6 +536,7 @@ body {
   color: #333333;
   margin: 0;
   padding: 0;
+  /* max-width: 220px; */
 }
 
 /* поиск гостиницы */
@@ -572,6 +581,7 @@ body {
   flex-direction: column;
   margin: 0px;
   padding: 0;
+  background-color: #284549;
 }
 
 .mailing__title {
@@ -605,6 +615,7 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   justify-content: space-between;
+  position: relative;
 }
 
 /* соцсети */
@@ -680,6 +691,9 @@ body {
   margin: 40px 0 0 30px;
   padding: 0;
   outline: none;
+  position: absolute;
+  top: -20px;
+  left: 90px;
 }
 
 .telephone:hover {
@@ -732,6 +746,7 @@ body {
   height: 408px;
   margin-top: -9px;
   padding: 0px 72px 0px 71px;
+  background-color: #263940;
 }
 
 .hotels__header {
@@ -980,7 +995,7 @@ body {
 .hotels__card {
   display: grid;
   grid-template-rows: 31px 55px 37px;
-  grid-template-columns: 180px 30px 151px 8px 160px 361px 160px;
+  grid-template-columns: 180px 30px 151px 8px 160px 370px 155px;
   margin: 0;
   position: relative;
 }
@@ -1052,7 +1067,7 @@ body {
   text-transform: uppercase;
   grid-row: 3 / 4;
   grid-column: 7 / 8;
-  margin: 0 0 0 17px;
+  margin: 0 0 0 0px;
 }
 
 .stars {
@@ -1151,12 +1166,12 @@ body {
 
 .mailing__input:focus {
   background-color: #E5E5E5;
-  outline: 3px solid #83B3D3;
+  outline: -2px solid #83B3D3;
 }
 
 .mailing__input:active {
   background-color: #FFFFFF;
-  outline: 2px solid #000000;
+  outline: -2px solid #000000;
 }
 
 .mailing__input:invalid {
