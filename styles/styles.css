@@ -61,6 +61,7 @@ body {
   display: flex;
   margin: 19px 0 0 0;
   padding: 0;
+  max-width: 341px;
 }
 
 .navigation-user {
@@ -115,7 +116,7 @@ body {
   text-decoration: none;
   background-color: #756257;
   margin: 0;
-  min-width: 160px;
+  max-width: 160px;
   min-height: 37px;
   padding: 9px 35px 9px 37px;
   border-radius: 4px;
@@ -747,6 +748,7 @@ body {
   margin-top: -9px;
   padding: 0px 72px 0px 71px;
   background-color: #263940;
+  min-height: 408px;
 }
 
 .hotels__header {
@@ -880,6 +882,10 @@ body {
   list-style-type: none;
   margin: 1px 0 0 2px;
   padding: 0;
+  min-height: 93px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .hotels__filter-price {
@@ -1155,9 +1161,10 @@ body {
   height: 60px;
   padding-left: 22px;
   border-radius: 10px 0px 0px 10px;
-  border: 0;
   margin: 0;
   background-color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+  outline: none;
 }
 
 .mailing__input:hover {
@@ -1166,12 +1173,12 @@ body {
 
 .mailing__input:focus {
   background-color: #E5E5E5;
-  outline: -2px solid #83B3D3;
+  border: 2px solid #83B3D3;
 }
 
 .mailing__input:active {
   background-color: #FFFFFF;
-  outline: -2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .mailing__input:invalid {
@@ -1425,6 +1432,7 @@ body {
   flex-direction: row;
   margin: 0;
   padding: 0;
+  min-height: 100px;
 }
 
 .hotels__form {
@@ -1595,6 +1603,7 @@ body {
   color: #333333;
   cursor: pointer;
   outline: none;
+  background-color: #FFFFFF;
 }
 
 .pagination__select:hover {
@@ -1679,7 +1688,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control__mark:focus {
+.control__input:focus + .control__mark {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
