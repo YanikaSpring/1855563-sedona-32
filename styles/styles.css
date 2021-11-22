@@ -757,7 +757,6 @@ body {
   background-image: url(../images/catalog-background\ 1.jpg);
   background-repeat: no-repeat;
   max-width: 1200px;
-  margin-top: -9px;
   padding: 0px 72px 0px 71px;
   background-color: #263940;
   min-height: 408px;
@@ -987,12 +986,36 @@ body {
 }
 
 .hotels__list {
-  display: grid;
-  grid-template-rows: 123px 123px 123px 123px;
-  row-gap: 58px;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   list-style-type: none;
   margin: 0 0 31px 0;
+}
+
+.hotels__title-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 361px 0 35px;
+  width: 319px;
+}
+
+.hotels__type-container {
+  display: flex;
+  justify-content: space-between;
+  width: 235px;
+  margin: -3px 0 32px 3px;
+}
+
+.hotels__buttons-container {
+  display: flex;
+}
+
+.hotels__raiting-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 165px;
+  
 }
 
 .hotels__card-img {
@@ -1012,10 +1035,8 @@ body {
 }
 
 .hotels__card {
-  display: grid;
-  grid-template-rows: 31px 55px 37px;
-  grid-template-columns: 180px 30px 151px 8px 160px 370px 155px;
-  margin: 0;
+  display: flex;
+  margin: 0 0 58px 0;
   position: relative;
 }
 
@@ -1028,19 +1049,15 @@ body {
 }
 
 .hotels__card .hotels__card-link {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
   outline: none;
 }
 
 .hotels__card .hotels__title-link {
-  grid-column: 3 / 6;
-  grid-row: 1 / 2;
-  margin-top: -7px;
-  padding-left: 5px;
+  margin: -5px 0 0px 0;
   min-width: 239px;
   outline: none;
   border: 3px solid #FFFFFF;
+  padding: 0;
 }
 
 .hotels__card-title {
@@ -1059,10 +1076,6 @@ body {
   line-height: 23px;
   font-weight: 400;
   color: #333333;
-  padding-left: 7px;
-  margin: -3px 0 0 1px;
-  grid-row: 2 / 3;
-  grid-column: 3 / 5;
 }
 
 .hotels__card .hotels__card-price {
@@ -1071,10 +1084,7 @@ body {
   line-height: 23px;
   font-weight: 400;
   color: #333333;
-  padding: 5px;
-  margin: -7px 0 0 0px;
-  grid-row: 2 / 3;
-  grid-column: 5 / 6;
+  padding: 0px;
 }
 
 .hotels__rating {
@@ -1084,17 +1094,14 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  grid-row: 3 / 4;
-  grid-column: 7 / 8;
-  margin: 0 0 0 0px;
+  margin: 10px 0 0 0px;
+  padding-bottom: 10px;
 }
 
 .stars {
-  grid-row: 1 / 2;
-  grid-column: 7 / 8;
   justify-self: center;
   align-self: center;
-  margin-top: -4px;
+  margin: 3px 0 63px 0;
 }
 
 .mailing__description-hotels {
@@ -1327,7 +1334,6 @@ body {
   text-decoration: none;
   grid-row: 3 / 4;
   grid-column: 3 / 4;
-  margin: -2px 0 0 7px;
   padding: 9px;
   border-radius: 4px;
   width: 131px;
