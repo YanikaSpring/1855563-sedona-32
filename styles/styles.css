@@ -52,7 +52,8 @@ body {
   justify-content: space-between;
   padding: 0 72px 0 60px;
   position: relative;
-  min-height: 73px;
+  min-height: 65px;
+  background-color: #FFFFFF;
 }
 
 .navigation__list {
@@ -71,13 +72,23 @@ body {
   padding: 0;
   min-width: 300px;
   justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.logo__sedona {
+  width: 138px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
 }
 
 .logo, .logo__sedona {
   position: absolute;
   outline: none;
-  left: 265px;
-
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navigation__link-user {
@@ -116,14 +127,17 @@ body {
   text-decoration: none;
   background-color: #756257;
   margin: 0;
-  max-width: 160px;
+  width: 160px;
   min-height: 37px;
   padding: 9px 35px 9px 37px;
   border-radius: 4px;
+  display: grid;
+  box-sizing: border-box;
 }
 
 .navigation__item-button {
-  margin: 18px 0 0 0;
+  margin: 13px 0 0 0;
+  width: 160px;
 }
 
 .navigation__icon {
@@ -245,7 +259,6 @@ body {
 .welcome {
   background: url(../images/divider.svg) left bottom no-repeat, url(../images/index-background.jpg)  no-repeat;
   height: 485px;
-  margin-top: -9px;
   padding: 0px;
   background-color: #1d343c;
 }
@@ -744,11 +757,11 @@ body {
   background-image: url(../images/catalog-background\ 1.jpg);
   background-repeat: no-repeat;
   max-width: 1200px;
-  height: 408px;
   margin-top: -9px;
   padding: 0px 72px 0px 71px;
   background-color: #263940;
   min-height: 408px;
+  background-size: cover;
 }
 
 .hotels__header {
@@ -1446,7 +1459,8 @@ body {
   flex-direction: column;
   margin-left: 78px;
   justify-content: center;
-  padding-top: 45px;
+  padding-top: 60px;
+  align-self: flex-start
 }
 
 .hotels__catalog {
