@@ -758,9 +758,8 @@ body {
   background-image: url(../images/catalog-background\ 1.jpg);
   background-repeat: no-repeat;
   max-width: 1200px;
-  padding: 0px 72px 0px 71px;
+  padding: 0px 72px 70px 71px;
   background-color: #263940;
-  min-height: 408px;
   background-size: cover;
 }
 
