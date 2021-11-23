@@ -750,6 +750,7 @@ body {
   border: 3px solid #FFFFFF;
   border-radius: 10px;
   outline: none;
+  margin-top: 2px;
 }
 
 /* страница гостиницы */
@@ -990,7 +991,7 @@ body {
   flex-direction: column;
   padding: 0;
   list-style-type: none;
-  margin: 0 0 31px 0;
+  margin: 0 0 0 0;
 }
 
 .hotels__title-container {
@@ -1036,8 +1037,11 @@ body {
 
 .hotels__card {
   display: flex;
-  margin: 0 0 58px 0;
   position: relative;
+}
+
+.hotels__card:not(last-child) {
+  margin: 0 0 56px 0;
 }
 
 .hotels__card::after {
@@ -1045,7 +1049,7 @@ body {
   position: absolute;
   border-top: 1px solid #E5E5E5;
   width: 1056px;
-  top: -32px;
+  top: -30px;
 }
 
 .hotels__card .hotels__card-link {
@@ -1251,10 +1255,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: 0;
-  /* padding: 16px 35px 12px 33px; */
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   outline: none;
   border: 3px solid #83B3D3;
   min-width: 160px;
@@ -1337,6 +1340,7 @@ body {
   padding: 9px;
   border-radius: 4px;
   width: 131px;
+  height: 19px;
 }
 
 .hotels__card-button:hover {
@@ -1364,12 +1368,11 @@ body {
   text-transform: uppercase;
   background-color: #83B3D3;
   border: 0;
-  grid-row: 3 / 4;
-  grid-column: 5 / 6;
   border-radius: 4px;
   cursor: pointer;
-  margin: -2px 0 0 7px;
+  margin: 0px 0 0 7px;
   width: 161px;
+  height: 37px;
 }
 
 .hotels__favorite-active {
@@ -1489,10 +1492,7 @@ body {
   border: 0;
   text-transform: uppercase;
   width: 625px;
-  margin-top: 27px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 19px;
+  margin: 0 auto 20px auto;
   height: 55px;
   border-radius: 4px;
   cursor: pointer;
@@ -1504,7 +1504,7 @@ body {
   position: absolute;
   border-top: 1px solid #E5E5E5;
   width: 1056px;
-  top: -35px;
+  top: -30px;
   left: -215px;
 }
 
@@ -1513,7 +1513,7 @@ body {
   position: absolute;
   border-top: 1px solid #E5E5E5;
   width: 1056px;
-  top: 80px;
+  top: 85px;
   left: -215px;
 }
 
@@ -1524,7 +1524,7 @@ body {
   justify-content: center;
   width: 800px;
   margin: 0;
-  padding: 86px 200px 137px 201px;
+  padding: 86px 200px 130px 201px;
 }
 
 .mailing__title-hotels {
