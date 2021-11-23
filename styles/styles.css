@@ -50,9 +50,9 @@ body {
 .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 0 72px 0 60px;
+  align-items: center;
+  padding: 0px 72px 12px 60px;
   position: relative;
-  min-height: 65px;
   background-color: #FFFFFF;
 }
 
@@ -60,10 +60,11 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   display: flex;
-  margin: 19px 0 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 5px 0 0 0;
   max-width: 341px;
 }
+
 
 .navigation-user {
   list-style-type: none;
@@ -89,6 +90,7 @@ body {
   outline: none;
   left: 50%;
   transform: translateX(-50%);
+  top: 0;
 }
 
 .navigation__link-user {
@@ -129,7 +131,7 @@ body {
   margin: 0;
   width: 160px;
   min-height: 37px;
-  padding: 9px 35px 9px 37px;
+  padding: 9px 30px 9px 31px;
   border-radius: 4px;
   display: grid;
   box-sizing: border-box;
@@ -223,7 +225,7 @@ body {
 .navigation__link-active::before {
   position: absolute;
   right: 10px;
-  top: 50px;
+  top: 53px;
   height: 2px;
   width: 70px;
   background-color: #756257;
@@ -233,7 +235,7 @@ body {
 .navigation__link-hotels::before {
   position: absolute;
   right: 20px;
-  top: 50px;
+  top: 53px;
   left: 10px;
   height: 2px;
   width: 93px;
@@ -627,6 +629,7 @@ body {
   width: 1200px;
   min-height: 120px;
   margin: 0 auto;
+  padding: 0;
   background-color: #FFFFFF;
   justify-content: space-between;
   position: relative;
@@ -702,7 +705,7 @@ body {
   text-decoration: none;
   text-align: center;
   width: 720px;
-  margin: 40px 0 0 30px;
+  margin: 39px 0 0 30px;
   padding: 0;
   outline: none;
   position: absolute;
@@ -750,7 +753,7 @@ body {
   border: 3px solid #FFFFFF;
   border-radius: 10px;
   outline: none;
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 /* страница гостиницы */
@@ -758,7 +761,7 @@ body {
   background-image: url(../images/catalog-background\ 1.jpg);
   background-repeat: no-repeat;
   max-width: 1200px;
-  padding: 0px 72px 70px 71px;
+  padding: 1px 72px 70px 71px;
   background-color: #263940;
   background-size: cover;
 }
@@ -949,7 +952,7 @@ body {
   outline: none;
 }
 
-.buttons__sorting-item:focus {
+.buttons__sorting-link:focus {
   border: 2px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 4px;
@@ -996,8 +999,8 @@ body {
 .hotels__title-container {
   display: flex;
   flex-direction: column;
-  margin: 0 361px 0 35px;
-  width: 319px;
+  margin: 0 0px 0 35px;
+  /* width: 670px; */
 }
 
 .hotels__type-container {
@@ -1015,7 +1018,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 165px;
-  
+  margin-left: auto;
 }
 
 .hotels__card-img {
@@ -1180,8 +1183,8 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  width: 580px;
-  height: 60px;
+  width: 578px;
+  height: 57px;
   padding-left: 22px;
   border-radius: 10px 0px 0px 10px;
   margin: 0;
@@ -1522,7 +1525,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 800px;
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 86px 200px 130px 201px;
 }
 
